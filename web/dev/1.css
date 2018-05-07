@@ -1,0 +1,46 @@
+div{
+    border: 1px solid red;
+}
+/*structural*/
+html,
+body {
+    height: 100%;
+    margin: 0
+}
+.page {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+
+    margin-right: 9%;
+    margin-left: 9%;
+}
+.page .header {
+    order: 0;
+    flex: 0 1 auto;
+}
+.page .content {
+    order: 1;
+    flex: 1 1 auto;
+    /* justify-content: center; */
+    justify-content: space-around;
+    display: flex;
+}
+.page .footer {
+    order: 4;
+    flex: 0 1 40px;
+}
+
+/*beautify*/
+.dp {
+    display: block;
+    max-width: 200px;
+    height: auto;
+    float: left;
+    margin: 0px auto;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+}
